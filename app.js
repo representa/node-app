@@ -3,9 +3,10 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-    res.send('hello world 2S');
+    res.send("************ Hello Wolrd Jenkins ***************");
 });
 
-app.listen(process.env.PORT || 3000);
- 
-module.exports = app;
+app.listen(3000, function () {
+    console.log('Server running...');
+});
+
